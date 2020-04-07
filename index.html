@@ -119,14 +119,12 @@
             </div>
             <div class="w3-card-4">
                 <header class="w3-container w3-white w3-hover-dark-gray">
-                    <h4 onclick="copynumber()"><img src="https://rktaxiservice.com/images/phonepe.png" width="80%"> <input type="text" style="display: none;"
-                            value="9521021925" id="myInput"></h4>
+                    <h4 onclick="copynumber()"><img src="https://rktaxiservice.com/images/phonepe.png" width="30%" style="margin-right: 10px;"> 9521021925</h4>
                 </header>
             </div>
             <div class="w3-card-4">
                 <header class="w3-container w3-blue w3-hover-dark-gray">
-                    <h4 onclick="copynumber()"><img src="images/googlepay.png" width="80%"> <input type="text" style="display: none;"
-                            value="9521021925" id="myInput"></h4>
+                    <h4 onclick="copynumber()"><img src="images/googlepay.png" width="30%" style="margin-right: 10px;"> 9521021925</h4>
                 </header>
             </div>
 
@@ -145,13 +143,7 @@
         function showme(){
             document.getElementById('donationcontainer').classList.toggle("showme");
         }
-        function copynumber() {
-            var copyText = document.getElementById("myInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999)
-            document.execCommand("copy");
-            alert("Number Copied");
-        }
+        
     </script>
 </body>
 

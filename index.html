@@ -21,7 +21,7 @@
         </div>
         <div class="w3-bar-block" style="line-height: 25px;">
             <style>
-                .w3-bar-item{
+                .w3-bar-item {
                     padding: 20px 10px !important;
                 }
             </style>
@@ -107,6 +107,52 @@
     </script>
 
     <iframe src="home/index.html" frameborder="0" scrollbar="no" id="covid19indiasite"></iframe>
+    <!--floating donation button-->
+    <div class="donationbutton">
+        <div class="donationconainer" id="donationcontainer">
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue w3-hover-dark-gray">
+                    <h4> <a href="https://www.paypal.com/paypalme/my/profile" target="_blank"><img
+                                src="images/paypal donation.png" alt=""></a>
+                        <h4>
+                </header>
+            </div>
+            <div class="w3-card-4">
+                <header class="w3-container w3-white w3-hover-dark-gray">
+                    <h4 onclick="copynumber()"><img src="https://rktaxiservice.com/images/phonepe.png" width="80%"> <input type="text" style="display: none;"
+                            value="9521021925" id="myInput"></h4>
+                </header>
+            </div>
+            <div class="w3-card-4">
+                <header class="w3-container w3-blue w3-hover-dark-gray">
+                    <h4 onclick="copynumber()"><img src="images/googlepay.png" width="80%"> <input type="text" style="display: none;"
+                            value="9521021925" id="myInput"></h4>
+                </header>
+            </div>
+
+        </div>
+        <img src="donate now.png" onclick="showme()" alt="rajesh royal covid19 centralize dashboard donaiton button">
+        <style>
+            .showme{
+                display: block !important;
+            }
+            .donationconainer{
+                display: none;
+            }
+        </style>
+    </div>
+    <script>
+        function showme(){
+            document.getElementById('donationcontainer').classList.toggle("showme");
+        }
+        function copynumber() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Number Copied");
+        }
+    </script>
 </body>
 
 </html>
